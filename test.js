@@ -35,3 +35,23 @@ var people = ["Jakub", "Nick", "Gabriel", "Richard", "Jessica"]
 
 let test1 = document.getElementById("button1")
 test1.addEventListener('click',()=>{console.log("hi")})
+
+
+function add(a,b){
+    a = document.getElementById('num1').value
+    b = document.getElementById('num2').value
+    let sum = Number(a) + Number(b)
+    let answer = document.getElementById('result')
+    answer.innerHTML = sum
+}
+
+let button2 = document.getElementById("button2")
+
+button2.addEventListener("click", add )
+
+
+
+
+
+
+
